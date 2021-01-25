@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
   res.end('Laboratorium L2. Sekcja: L. Szula, B. Klima');
 });
 
-server.listen(port, hostname, () => {
+server.listen(port, () => {
   console.log("Server running at http://${hostname}:${port}/");
 });
 
