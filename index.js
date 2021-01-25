@@ -1,7 +1,7 @@
 const http = require('http');
 
 const hostname = 'localhost';
-const PORT = process.env.PORT || 5000
+const port = process.env.PORT || 5000
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
   res.end('Laboratorium L2. Sekcja: L. Szula, B. Klima');
 });
 
-server.listen(PORT, hostname, () => {
-  console.log("Server running at http://${hostname}:${PORT}/");
+server.listen(port, hostname, () => {
+  console.log("Server running at http://${hostname}:${port}/");
 });
 
